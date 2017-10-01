@@ -1,9 +1,9 @@
-# CentOS 6 Ansible Test Image
+# CentOS 7 Ansible Test Image
 
-[![Travis Automated build](https://travis-ci.org/yawpitch/docker-ansible-centos.svg?branch=6)](https://travis-ci.org/yawpitch/docker-ansible-centos/branches)
-[![Docker Automated build](https://img.shields.io/docker/automated/yawpitch/docker-ansible-centos-6.svg?maxAge=692000)](https://hub.docker.com/r/yawpitch/docker-ansible-centos-6/)
+[![Travis Automated build](https://travis-ci.org/yawpitch/docker-ansible-centos.svg?branch=7)](https://travis-ci.org/yawpitch/docker-ansible-centos/branches)
+[![Docker Automated build](https://img.shields.io/docker/automated/yawpitch/docker-ansible-centos-7.svg?maxAge=792000)](https://hub.docker.com/r/yawpitch/docker-ansible-centos-7/)
 
-Dockerized CentOS 6 for Ansible playbook and role tests.
+Dockerized CentOS 7 for Ansible playbook and role tests.
 
 ## For Ansible Testing Only 
 
@@ -18,7 +18,7 @@ First, [Install Docker](https://docs.docker.com/engine/installation/), then choo
 Any time a commit is merged to the `master` branch of this repo, **or** any time there is a rebuild of the upstream OS container, an Automatic Build will occur on Docker Hub. You can use this be *pulling* the image to your local machine:
 
 ```sh
-sudo docker pull yawpitch/docker-ansible-centos-6:latest
+sudo docker pull yawpitch/docker-ansible-centos-7:latest
 ```
 
 For convenience, a `make pull` target has been provided to do this for you. You can also both pull & verify the current Docker Hub image with the following command:
@@ -34,7 +34,7 @@ This will ensure that a container launched with from the image at minimum contai
 If you wish to build the image on your local machine, `git clone` this repo, `cd` into the repo, and then run:
 
 ```sh
-sudo docker build -t docker-ansible-centos-6 .
+sudo docker build -t docker-ansible-centos-7 .
 ```
 
 For convenience, a `make build` target has been provided to do this for you. You can also both build & verify a local image of the current repo with the following command:
