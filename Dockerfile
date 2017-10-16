@@ -32,5 +32,8 @@ COPY hosts /etc/ansible/hosts
 # Set cgroup volume
 VOLUME ["/sys/fs/cgroup", "/tmp", "/run"]
 
+# Set cgroup volume
+VOLUME ["/sys/fs/cgroup", "/tmp", "/run"]
+
 # Set initial cmd
 CMD ["/usr/lib/systemd/systemd"]
