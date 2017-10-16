@@ -1,7 +1,7 @@
 # CentOS 7 Ansible Test Image
 
 [![Travis Automated build](https://travis-ci.org/yawpitch/docker-ansible-centos.svg?branch=7)](https://travis-ci.org/yawpitch/docker-ansible-centos/branches)
-[![Docker Automated build](https://img.shields.io/docker/automated/yawpitch/docker-ansible-centos-7.svg?maxAge=792000)](https://hub.docker.com/r/yawpitch/docker-ansible-centos-7/)
+[![Docker Automated build](https://img.shields.io/docker/automated/yawpitch/docker-ansible-centos-7.svg?maxAge=2592000)](https://hub.docker.com/r/yawpitch/docker-ansible-centos-7/)
 
 Dockerized CentOS 7 for Ansible playbook and role tests.
 

@@ -27,7 +27,10 @@ RUN yum makecache fast \
 RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
 
 # Install Ansible inventory file.
-RUN mkdir -p /etc/ansible && echo "[local]\nlocalhost" > /etc/ansible/hosts
+COPY hosts /etc/ansible/hosts
+
+# Set cgroup volume
+VOLUME ["/sys/fs/cgroup", "/tmp", "/run"]
 
 # Set cgroup volume
 VOLUME ["/sys/fs/cgroup", "/tmp", "/run"]
